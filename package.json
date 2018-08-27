@@ -1,0 +1,64 @@
+{
+  "name": "obs-shortcuts",
+  "version": "1.0.0",
+  "description": "Keyboard shortcuts for OBS Studio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/needim/obs-shortcuts.git"
+  },
+  "homepage": "https://github.com/needim/obs-shortcuts",
+  "bugs": {
+    "url": "https://github.com/needim/obs-shortcuts/issues"
+  },
+  "author": {
+    "name": "Nedim ARABACI",
+    "email": "nedimarabaci@gmail.com",
+    "url": "https://ned.im"
+  },
+  "keywords": [
+    "obs",
+    "obs websocket",
+    "shortcut",
+    "ui"
+  ],
+  "main": "main.js",
+  "scripts": {
+    "prod": "webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
+    "start": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
+    "build": "webpack --config webpack.build.config.js --mode production",
+    "packageAll": "npm run build && electron-packager ./ --out=./builds --platform=all",
+    "package": "npm run build && electron-packager ./ --out=./builds"
+  },
+  "dependencies": {
+    "electron-store": "^2.0.0",
+    "gkm": "^0.2.0",
+    "noty": "^3.2.0-beta",
+    "obs-websocket-js": "^1.2.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "script-ext-html-webpack-plugin": "^2.0.1",
+    "semantic-ui-react": "^0.82.3"
+  },
+  "devDependencies": {
+    "electron": "^2.0.8",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "babel-minify": "^0.4.3",
+    "css-loader": "^1.0.0",
+    "electron-packager": "^12.1.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "postcss-preset-env": "^5.3.0",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
+  }
+}

@@ -1,0 +1,61 @@
+.con-red {
+  color: red;
+}
+
+.con-green {
+  color: green;
+}
+
+.obs-form .ui.label {
+  min-width: 6.6125rem !important;
+}
+
+.shortcut-create-area .field {
+  margin-bottom: 0.625rem;
+}
+
+.key-recorder + input {
+  width: 15.625rem;
+}
+
+.ui.selection.dropdown .menu {
+  max-height: 16.15428571rem;
+}
+
+.ui.dimmer {
+  background-color: rgba(219, 40, 40, 0.79);
+}
+
+.ui.segment.dimmable.dimmed {
+  padding: 0.3125rem;
+}
+
+.ui.container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.ui.bottom.attached.tab.segment.active {
+  border-bottom: 0 !important;
+}
+
+.ui.tabular.menu .active.item {
+  border-radius: 0 !important;
+}
+
+.ui.icon.header .icon {
+  font-size: 2em !important;
+}
+
+h2.ui.header {
+  font-size: 1.31428571rem !important;
+}
+
+input[name="keys"] {
+  min-width: 16.25rem;
+}
+
+.ui.toggle.checkbox {
+  margin-left: 1.25rem;
+}
+
